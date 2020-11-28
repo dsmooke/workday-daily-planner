@@ -4,40 +4,43 @@ body {
     line-height: 1;
   }
   
-  textarea{
+  textarea { /*typed text area, middle column - default formatting*/
     background: transparent;
     border: none;
     resize: none;
-    color: #000000;
+    color: #000000; 
     border-left: 1px solid black;
     padding: 10px;
   }
   
-  .jumbotron {
+   .jumbotron { /*title of page banner*/
     text-align: center;
     background-color: transparent;
     color: black;
     border-radius: 0;
     border-bottom: 10px solid black;
   }
-  
-  .description{
+   
+  .description {   /*typed text inside time-block*/
     white-space: pre-wrap;
-  }
+    /*can change typed text color here, if none it reverts to .textarea color*/
+    /*can change background color here, else reverts to default .textarea*/
+  } 
   
-  .time-block{
+  .time-block { /*column of times on schedule*/
     text-align: center;
     border-radius: 15px;
+    
+    
   }
-  
-  .row {
+ 
+  .row { /*lines in between each time-block, border for each block*/
     white-space: pre-wrap;
     height: 80px;
-    border-top: 1px solid white;;
+    border-top: 1px solid rgb(87, 85, 85);/*dividing lines between event blocks*/
   }
-  
-  .hour {
-    background-color: #ffffff;
+  .hour { /*times inside time column, text 9am etc.*/
+    background-color: #ffff;
     color: #000000;
     border-top: 1px dashed #000000;
   }
@@ -56,7 +59,7 @@ body {
     background-color: #77dd77;
     color: white;
   }
-  
+   
   .saveBtn {
     border-left: 1px solid black;
     border-top-right-radius: 15px;
