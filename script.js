@@ -20,12 +20,20 @@ getHeaderDate();
 
 // $("div").attr("class="axy"")
 
-let hour = moment().format("h a");
-for (let hour = 9; hour <= 19; hour++) {
-  console.log(hour);
+function getTime() {
+  // var currentTime = moment().hour(9);
+  for (let i = 9; i <= 19; i++) {
+  // console.log(currentTime);
+  console.log(i);
 }
+let i = hour;
+var hour = moment().format("h a");
+var hour = moment().hour();
+let time = moment().format("h A");
+}
+getTime();
 
 
 // var startDay = hour(9);
-var currentTime = moment().hour();
+// var currentTime = moment().hour();
 
