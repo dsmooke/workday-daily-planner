@@ -14,24 +14,38 @@ function getHeaderDate() {
 // load today's date (header date) [correct]
 getHeaderDate();
 
+const hour = moment().format("h a");
+
+function getTime() {
+  // var currentTime = moment().hour(9);
+  for (let hour = 9; hour <= 19; hour++) {
+  // console.log(currentTime);
+  console.log(hour);
+}
+// let hour = i;
+
+// var hour = moment().hour();
+// let time = moment().format("h A");
+}
+getTime();
+
+let container = $(".container");
+
+let hour9Div = $(`<div class='row time-block'>
+  <div class='col-2 hour'>${hour}</div>
+  <textarea class="col-8 description" placeholder="add event"></textarea> 
+  <button class="col-2 saveBtn>Save</button>
+  </div>`);
+container.append(hour9Div);
+
 // var hourBlock = $("#hour-9")
 // //use bootstrap class names in js - id that relates to current hour 
 // $("div").html(`<div ${hourBlock} class="row time-block"></div>`);
 
 // $("div").attr("class="axy"")
 
-function getTime() {
-  // var currentTime = moment().hour(9);
-  for (let i = 9; i <= 19; i++) {
-  // console.log(currentTime);
-  console.log(i);
-}
-let i = hour;
-var hour = moment().format("h a");
-var hour = moment().hour();
-let time = moment().format("h A");
-}
-getTime();
+
+
 
 
 // var startDay = hour(9);
