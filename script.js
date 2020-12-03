@@ -1,9 +1,15 @@
+// CURRENT TIME
+var currentTime = moment().format("h");
+time = moment().hour();
+console.log(currentTime); // want it ot be 
+console.log(time);
+
 // want to be able to compare hour with current time
 var addedEvent = {
-  hour: ["9am", "10am", "11am", "12pm", "1pm", "2pm", "3pm", "4pm", "5pm"],
+  hour: ["9", "10", "11", "12", "1", "2", "3", "4", "5"],
   event: "TEST"
 }
-var eventBlock = $("input")
+var eventBlock = $("textarea")
 
 // var addedEvent = ['event1', 'event2', 'event3']
 
@@ -25,10 +31,7 @@ var time = ["9am", "10am", "11am", "12pm", "1pm", "2pm", "3pm", "4pm", "5pm"];
 
 
 
-// CURRENT TIME
-var currentTime = moment().hour();
-time = moment().format("h:mm A");
-console.log(time);
+
 
 //color code events based on relation to current time
 function colorCodeEvent(){
