@@ -9,12 +9,12 @@ var addedEvent = {
   hour: ["9", "10", "11", "12", "13", "14", "15", "16", "17"]
 }
 
-// var saveBtn = $(".saveBtn");
-// saveBtn.on("click", function(event) {
-//   console.log($(this).prev().val());
-//   console.log($(this).parent().attr("id"))
-//   localStorage.setItem($(this).parent().attr("id"), $(this).prev().val()); //key value pair 
-// })
+var saveBtn = $(".saveBtn");
+saveBtn.on("click", function(event) {
+  console.log($(this).prev().val());
+  console.log($(this).parent().attr("id"))
+  localStorage.setItem($(this).parent().attr("id"), $(this).prev().val()); //key value pair 
+})
 
 // color coding 
 for (let i = 0; i< addedEvent.hour.length; i++) {
