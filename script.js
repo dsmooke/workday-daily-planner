@@ -3,19 +3,23 @@ var addedEvent = {
   addedEvent: $("input")
 }
 
+//want typed info to display within input element
 var inputData = $("<input>").text
 
+//want time to be defined as the event's hour at indexNumber
 var time = addedEvent.hour[0];
+
+
 var eventBlock = $("input")
 
 var saveBtn = $(".saveBtn");
 var saveEvent = $(".saveBtn");
 
-  
+// function to save newest schedule and store it
 function saveSchedule() {
   localStorage.setItem("savedSchedule");JSON.stringify(savedSchedule)
 
-
+// on save button want to save event
   saveEvent.on("click", function(event) {
   event.preventDefault();
   localStorage.setItem(hour, addedEvent)
@@ -26,6 +30,7 @@ function saveSchedule() {
 
 // const mySchedule = ['event1', 'event2', 'event3']
 
+// at each hour display 'you have ${input/typed event} at ${time}'
 for (let i = 0; i<= addedEvent.hour.length; i++) {
   console.log(`You have ${addedEvent[i]} at ${time}`)
   if (eventBlock === null) {
@@ -38,9 +43,9 @@ for (let i = 0; i<= addedEvent.hour.length; i++) {
 
 
 
-function displaySchedule() {
+// function displaySchedule() {}
 
-}
+
 //   //mySchedule refers to the current day's schedule
 // var Event1 = [];
 // var eventData = $("input")
@@ -61,14 +66,14 @@ function displaySchedule() {
 
 
 
-// //get data for header date [correct!]
-// function getHeaderDate() {
-//   var currentHeaderDate = moment().format('dddd, MMMM Do, YYYY');
-//   $("#currentDay").text(currentHeaderDate);
-// }
+//get data for header date [correct!]
+function getHeaderDate() {
+  var currentHeaderDate = moment().format('dddd, MMMM Do, YYYY');
+  $("#currentDay").text(currentHeaderDate);
+}
 
-// // load today's date (header date) [correct]
-// getHeaderDate();
+// load today's date (header date) [correct]
+getHeaderDate();
 
 // const hour = moment().format("h a");
 // // var addedEvent = $()
