@@ -4,7 +4,7 @@ time = moment().hour();
 // console.log(currentTime); // want it ot be 
 console.log(time);
 
-// want to be able to compare hour with current time
+// variable to compare hour with time
 var addedEvent = {
   hour: ["9", "10", "11", "12", "13", "14", "15", "16", "17"]
 }
@@ -33,14 +33,14 @@ for (let i = 0; i< addedEvent.hour.length; i++) {
     // console.log("future" + $(".future"));
    
   }
-//   // if (event === null) {
-//   //   console.log(`You are free at ${addedEvent.hour[i]}!`);
-//   // }
-//   console.log(localStorage.getItem(addedEvent.hour[i]))
+  if (event === null) {
+    console.log(`You are free at ${addedEvent.hour[i]}!`);
+  }
+  console.log(localStorage.getItem(addedEvent.hour[i]))
 
-//   //where to display the items in local storage, setting the value
-//   $(`#${addedEvent.hour[i]} textarea`).val(localStorage.getItem(addedEvent.hour[i]))
-// }
+  //where to display the items in local storage, setting the value
+  $(`#${addedEvent.hour[i]} textarea`).val(localStorage.getItem(addedEvent.hour[i]))
+}
 
 
 
