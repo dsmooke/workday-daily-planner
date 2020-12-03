@@ -4,25 +4,26 @@ time = moment().hour();
 console.log(currentTime); // want it ot be 
 console.log(time);
 
+
 // want to be able to compare hour with current time
 var addedEvent = {
   hour: ["9", "10", "11", "12", "1", "2", "3", "4", "5"],
-  event: "TEST"
+  event: "" //want this to be linked to html
 }
-var eventBlock = $("textarea")
-
+// var eventBlock = $("textarea")
+let event = document.getElementById("text");
 // var addedEvent = ['event1', 'event2', 'event3']
 
 // at each hour display 'you have ${input/typed event} at ${time}'
 for (let i = 0; i<= addedEvent.hour.length; i++) {
   console.log(`You have ${addedEvent.event} at ${time}`)
-  if (eventBlock === null) {
+  if (event === null) {
     console.log(`You are free at ${time}!`);
   }
 }
 
 // TIME BLOCK ?
-var time = ["9am", "10am", "11am", "12pm", "1pm", "2pm", "3pm", "4pm", "5pm"];
+// var time = ["9am", "10am", "11am", "12pm", "1pm", "2pm", "3pm", "4pm", "5pm"];
 //want typed info to display within input element
 // var inputData = $("<input>").text
 
