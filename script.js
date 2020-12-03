@@ -16,7 +16,7 @@ let event = document.getElementById("text");
 
 // at each hour display 'you have ${input/typed event} at ${time}'
 for (let i = 0; i<= addedEvent.hour.length; i++) {
-  console.log(`You have ${addedEvent.event} at ${time}`)
+  console.log(`You have ${addedEvent.event} at ${addedEvent.hour[i]}`)
   if (event === null) {
     console.log(`You are free at ${time}!`);
   }
