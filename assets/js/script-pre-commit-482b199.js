@@ -1,4 +1,4 @@
-// CURRENT TIME
+// CURRENT TIME 
 var currentTime = moment().format("h");
 time = moment().hour();
 console.log(currentTime); // want it ot be 
