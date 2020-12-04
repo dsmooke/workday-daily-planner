@@ -56,7 +56,7 @@ THEN the saved events persist
 
 ## Developer
 
-For my workday daily scheduler I focused on ....
+For my workday daily scheduler I focused on a detailed html format, but later realized that would only complicate my JavaScript code. This assignment marked a mini milestone for myself because I managed to create both the root variable and the main 'for' loop on my own! Small accomplishment but made me feel like JavaScript is starting to click. Also, huge thank you to Nathan Sartain (TA) for his time and patience. 
 
 [Workday Daily Planner](https://dsmooke.github.io/workday-daily-planner/)
 
