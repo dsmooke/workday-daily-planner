@@ -1,7 +1,6 @@
 
-// var currentTime = moment().format("h");
+// time variable
 time = moment().hour();
-// console.log(currentTime); // want it ot be 
 console.log(time);
 
 // variable to compare hour with time
@@ -9,6 +8,7 @@ var addedEvent = {
   hour: ["9", "10", "11", "12", "13", "14", "15", "16", "17"]
 }
 
+// save button
 var saveBtn = $(".saveBtn");
 saveBtn.on("click", function(event) {
   console.log($(this).prev().val());
@@ -16,12 +16,12 @@ saveBtn.on("click", function(event) {
   localStorage.setItem($(this).parent().attr("id"), $(this).prev().val()); //key value pair 
 })
 
-// color coding 
+// color coding time-blocks based on relation to current time
 for (let i = 0; i< addedEvent.hour.length; i++) {
   
   console.log($(`#${addedEvent.hour[i]} textarea`).val() )
   
-
+// condition to assign colors to time-blocks
   if (addedEvent.hour[i] == time) {
     $(`#${addedEvent.hour[i]}`).addClass("present")
     // console.log("present" + $(".present"));
@@ -42,16 +42,13 @@ for (let i = 0; i< addedEvent.hour.length; i++) {
   $(`#${addedEvent.hour[i]} textarea`).val(localStorage.getItem(addedEvent.hour[i]))
 }
 
-
-
-
-//get data for header date [correct!]
+//get data for header date 
 function getHeaderDate() {
   var currentHeaderDate = moment().format('dddd, MMMM Do, YYYY');
   $("#currentDay").text(currentHeaderDate);
 }
 
-// load today's date (header date) [correct]
+// load today's date (header date) 
 getHeaderDate();
 
 
