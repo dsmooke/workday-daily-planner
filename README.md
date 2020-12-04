@@ -64,7 +64,7 @@ For my workday daily scheduler I focused on ....
 
 The following image shows the web application's appearance and functionality:
 
-![Application Demo](/img link.jpg) 
+![Application Demo](./hw5-final-demo-img.png) 
 
 - - -
 © 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
