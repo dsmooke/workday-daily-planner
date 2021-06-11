@@ -1,12 +1,16 @@
 # Workday Scheduler
 
+<span align="left">
+
+<a href="https://img.shields.io/badge/License-MIT-brightgreen?style=plastic"><img alt="M.I.T. License use" src="https://img.shields.io/badge/License-MIT-brightgreen?style=plastic"/></a>
+
+ </span>
+
 ![Application Demo](./hw5-final-demo-img.png)
 
 ## Description
 
-This is the fifth assignment from the UConn Coding Bootcamp curriculum which combines our working knowledge of the first four week's topics (Git, Terminal, HTML, CSS, GitHub, GitHub Pages, GitLab, Web Accessibility, Bootstrap, JavaScript, Web APIs and jQuery) with the fifth week's topic: Third-Party APIs.
-
-For this assignment we were to build a work day scheduler, or daily planner, by modifying some starter code.
+A work day scheduler, or daily planner, build by modifying some starter code and uses Third-Party APIs. 
 
 View the application [here](https://dsmooke.github.io/workday-daily-planner/).
 
@@ -68,7 +72,18 @@ For my workday daily scheduler I focused on a detailed html format, but later re
 The following image shows the web application's appearance and functionality:
 
 ![Application Demo](./hw5-final-demo-img.png)
+  
+### Quick Installation
 
+1. Clone repo and install packages. Edit scripts within package.json file. npm start to run in integrated terminal, run in browser with localhost:3000.
+
+## Contributing
+
+[Dana Smooke]("https://github.com/dsmooke")
+
+## License
+
+[MIT]("https://opensource.org/licenses/MIT")
 ---
 
 © 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
